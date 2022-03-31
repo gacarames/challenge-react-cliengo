@@ -1,7 +1,6 @@
-import styled from 'styled-components';
-import User from './User';
+import styled from "styled-components";
 
-const StyledUser = styled('div')`
+const StyledUser = styled("div")`
   display: flex;
   flex-flow: row;
   justify-content: space-between;
