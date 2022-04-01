@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addUser } from '../../redux/slices/userSlice';
-import { StyledLabel, StyledInput, StyledSubmit, StyledErrorDisplay } from './styled';
+import { StyledForm, StyledLabel, StyledInput, StyledSubmit, StyledErrorDisplay } from './styled';
 import { useForm } from "react-hook-form";
 import formValidations from "../../utils/formValidations";
 
@@ -34,7 +34,7 @@ const Form: FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit(handleCreateUser)}>
+        <StyledForm onSubmit={handleSubmit(handleCreateUser)}>
             <StyledLabel htmlFor='name'>
                 Name
             </StyledLabel>
@@ -73,7 +73,7 @@ const Form: FC = () => {
                 </StyledErrorDisplay>
             )}
             <StyledSubmit type='submit' value='Aceptar' />
-        </form>
+        </StyledForm>
     )
 }
 

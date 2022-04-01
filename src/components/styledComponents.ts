@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledButton = styled.button`
   color: #fff;
@@ -55,15 +55,15 @@ const StyledDeleteButton = styled(StyledButton)`
   }
 `;
 
-const StyledHeading = styled('h2')`
+const StyledHeading = styled("h2")`
   margin: 0;
   margin-bottom: 30px;
 `;
 
-const StyledInputEdit = styled.input.attrs({ type: 'text' })`
+const StyledInputEdit = styled.input.attrs({ type: "text" })`
   border: 1px solid #bfbbbd;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 2px 8px;
   border-radius: 8px;
   margin: 0px 10px;
   font-size: 16px;
@@ -74,5 +74,5 @@ export {
   StyledPrimaryButton,
   StyledDeleteButton,
   StyledHeading,
-  StyledInputEdit
+  StyledInputEdit,
 };

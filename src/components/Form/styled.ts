@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledLabel = styled.label`
   font-style: normal;
@@ -11,7 +11,7 @@ const StyledLabel = styled.label`
   margin-bottom: 8px;
 `;
 
-const StyledInput = styled.input.attrs({ type: 'text' })`
+const StyledInput = styled.input.attrs({ type: "text" })`
   border: 1px solid #bfbbbd;
   box-sizing: border-box;
   padding: 8px;
@@ -22,7 +22,7 @@ const StyledInput = styled.input.attrs({ type: 'text' })`
   line-height: 24px;
 `;
 
-const StyledSubmit = styled.input.attrs({ type: 'submit' })`
+const StyledSubmit = styled.input.attrs({ type: "submit" })`
   border: none;
   background: #7d60f5;
   border-radius: 8px;
@@ -58,4 +58,14 @@ const StyledErrorDisplay = styled.div`
   }
 `;
 
-export { StyledLabel, StyledInput, StyledSubmit, StyledErrorDisplay };
+const StyledForm = styled("form")`
+  display: contents;
+`;
+
+export {
+  StyledForm,
+  StyledLabel,
+  StyledInput,
+  StyledSubmit,
+  StyledErrorDisplay,
+};

@@ -1,12 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledListHeader = styled.div`
   margin-bottom: 10px;
   & > ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     > li {
-      width: calc(100% / 4);
+      width: calc(100% / 5);
       text-align: center;
       padding: 0 10px;
       font-weight: 600;
